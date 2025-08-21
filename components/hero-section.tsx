@@ -1,6 +1,3 @@
-import { Button } from "@/components/ui/button";
-import { ArrowRight, Users, TreePine, Recycle } from "lucide-react";
-
 const heroContent = {
   title: "Where Every Efforts,",
   titleHighlight: "Ripples Green",

@@ -79,8 +79,8 @@ export default function JoinUsPage() {
               Get in Touch
             </h2>
             <p className="text-lg text-gray-700">
-              Ready to join us? Reach out and let's start making a difference
-              together.
+              Ready to join us? Reach out and let&apos;s start making a
+              difference together.
             </p>
           </div>
 
