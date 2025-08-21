@@ -1,36 +1,45 @@
+import type React from "react";
+import type { Metadata } from "next";
+import { Montserrat, Poppins } from "next/font/google";
 import "./globals.css";
-import cx from "classnames";
-import { sfPro, inter } from "./fonts";
-import Footer from "@/components/layout/footer";
-import { Suspense } from "react";
-import { Analytics as VercelAnalytics } from "@vercel/analytics/react";
-import Navbar from "@/components/layout/navbar";
+import { Header } from "@/components/header";
+import { Footer } from "@/components/footer";
 
-export const metadata = {
-  title: "CleanDay - Building blocks for your Next.js project",
+const montserrat = Montserrat({
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--font-montserrat",
+});
+
+const poppins = Poppins({
+  subsets: ["latin"],
+  weight: ["300", "400", "500", "600", "700"],
+  display: "swap",
+  variable: "--font-poppins",
+});
+
+export const metadata: Metadata = {
+  title: "CleanDay - Act, Clean, Inspire",
   description:
-    "Precedent is the all-in-one solution for your Next.js project. It includes a design system, authentication, analytics, and more.",
-  metadataBase: new URL("https://precedent.dev"),
+    "Join CleanDay in making Nepal cleaner and greener. Community cleanups, tree plantation, and environmental awareness campaigns.",
+  generator: "v0.app",
 };
 
-export default async function RootLayout({
+export default function RootLayout({
   children,
-}: {
+}: Readonly<{
   children: React.ReactNode;
-}) {
+}>) {
   return (
-      <html lang="en">
-        <body className={cx(sfPro.variable, inter.variable)}>
-          <div className="fixed h-screen w-full bg-gradient-to-br from-indigo-50 via-white to-cyan-100" />
-          <Suspense fallback="...">
-            <Navbar />
-          </Suspense>
-          <main className="flex min-h-screen w-full flex-col items-center justify-center py-32">
-            {children}
-          </main>
-          <Footer />
-          <VercelAnalytics />
-        </body>
-      </html>
+    <html
+      lang="en"
+      className={`${montserrat.variable} ${poppins.variable} antialiased`}
+    >
+      <body>
+        <Header />
+        {children}
+        <Footer />
+      </body>
+    </html>
   );
 }
