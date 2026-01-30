@@ -29,8 +29,8 @@ export default function NotFound() {
           like we clear the environment!
         </p>
         <p className="text-base text-foreground/60 font-sans mb-8 text-balance">
-          The page you're looking for might have been moved or no longer exists.
-          Let's get you back on track.
+          The page you&apos;re looking for might have been moved or no longer exists.
+          Let&apos;s get you back on track.
         </p>
 
         {/* Action Buttons */}

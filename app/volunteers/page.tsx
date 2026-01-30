@@ -21,7 +21,7 @@ export default function VolunteersPage() {
             Our Green Warriors Community
           </h1>
           <p className="text-lg md:text-xl text-primary-foreground/90 mb-8 text-balance">
-            Be part of CleanDay's mission to keep Earth clean and green. Find
+            Be part of CleanDay&apos;s mission to keep Earth clean and green. Find
             your perfect role and make a difference today!
           </p>
           <p className="text-base md:text-lg text-primary-foreground/80 font-sans">
