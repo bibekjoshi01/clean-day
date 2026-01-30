@@ -1,6 +1,5 @@
 "use client";
 
-import { Button } from "@/components/ui/button";
 import { Users, Megaphone, Leaf, MapPin, Heart } from "lucide-react";
 
 const roles = [
@@ -136,9 +135,9 @@ export default function JoinUsPage() {
               Choose Your Role in CleanDay
             </h2>
             <p className="text-lg text-foreground/70 mb-8 leading-relaxed font-sans">
-              At CleanDay, everyone has a place to contribute. Whether you're a
+              At CleanDay, everyone has a place to contribute. Whether you&apos;re a
               natural leader, creative genius, community advocate, or passionate
-              environmentalist, there's a perfect role for you. Select the role
+              environmentalist, there&apos;s a perfect role for you. Select the role
               that best matches your interests and skills, and become part of
               something meaningful.
             </p>
