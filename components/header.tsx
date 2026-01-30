@@ -54,6 +54,12 @@ export function Header() {
             >
               Volunteers
             </Link>
+            <Link
+              href="$"
+              className="text-foreground hover:text-primary transition-colors"
+            >
+              Events
+            </Link>
           </nav>
 
           {/* CTA Button */}

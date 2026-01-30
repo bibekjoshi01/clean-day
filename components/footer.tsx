@@ -1,6 +1,14 @@
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
-import { Leaf, Mail, MapPin, Phone, Facebook, Linkedin } from "lucide-react";
+import {
+  Leaf,
+  Mail,
+  MapPin,
+  Phone,
+  Facebook,
+  Linkedin,
+  Github,
+} from "lucide-react";
 
 export function Footer() {
   return (
@@ -39,7 +47,7 @@ export function Footer() {
 
               {/* LinkedIn */}
               <a
-                href="http://linkedin.com/company/clean-day-global"
+                href="https://linkedin.com/company/clean-day-global"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -49,6 +57,20 @@ export function Footer() {
                   className="p-2 bg-transparent"
                 >
                   <Linkedin className="h-4 w-4" />{" "}
+                </Button>
+              </a>
+              {/* Github */}
+              <a
+                href="https://github.com/bibekjoshi01/clean-day"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Button
+                  size="sm"
+                  variant="outline"
+                  className="p-2 bg-transparent"
+                >
+                  <Github className="h-4 w-4" />{" "}
                 </Button>
               </a>
             </div>
@@ -74,6 +96,22 @@ export function Footer() {
                   className="text-muted-foreground hover:text-primary transition-colors"
                 >
                   About Us
+                </a>
+              </li>
+              <li>
+                <a
+                  href="/join-us"
+                  className="text-muted-foreground hover:text-primary transition-colors"
+                >
+                  Join Us
+                </a>
+              </li>
+              <li>
+                <a
+                  href="/donate"
+                  className="text-muted-foreground hover:text-primary transition-colors"
+                >
+                  Donate
                 </a>
               </li>
             </ul>
