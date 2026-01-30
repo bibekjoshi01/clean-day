@@ -8,7 +8,6 @@ export function Footer() {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Logo and Description */}
-          {/* Logo and Description */}
           <div className="space-y-4">
             <div className="flex items-center space-x-2">
               <div className="flex items-center justify-center w-10 h-10 bg-primary rounded-full">
@@ -95,7 +94,7 @@ export function Footer() {
               <div className="flex items-center space-x-3">
                 <Mail className="h-4 w-4 text-primary" />
                 <span className="text-muted-foreground text-sm">
-                  cleandayglobal@gmail.com
+                  info@cleandayglobal.org
                 </span>
               </div>
               <div className="flex items-center space-x-3">
