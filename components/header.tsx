@@ -48,6 +48,12 @@ export function Header() {
             >
               Donate
             </Link>
+            <Link
+              href="/volunteers"
+              className="text-foreground hover:text-primary transition-colors"
+            >
+              Volunteers
+            </Link>
           </nav>
 
           {/* CTA Button */}
@@ -94,6 +100,12 @@ export function Header() {
                 className="block px-3 py-2 text-foreground hover:text-primary"
               >
                 Donate
+              </a>
+              <a
+                href="/volunteers"
+                className="block px-3 py-2 text-foreground hover:text-primary"
+              >
+                Volunteers
               </a>
               <div className="px-3 py-2">
                 <Button
